@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadreck Mwami | Introduction to Web Technologies</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">ICT251 &mdash; Introduction to Web Technologies</p>
+      <h1>Shadreck Mwami</h1>
+      <p class="tagline">Student Number: 202509161 &nbsp;|&nbsp; Aspiring Web Developer</p>
+    </div>
+  </header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#hobbies">My Hobbies</a></li>
+      <li><a href="#learning">My Learning Plan</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#media">My Media</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs (external)</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        My name is Shadreck Mwami and I am a second-year student with a strong interest in
+        technology and how websites are built. I chose Introduction to Web Technologies
+        because I want to understand the full process of turning an idea into a working,
+        attractive web page that real people can use. I enjoy learning by doing, so I spend
+        time practising HTML and CSS in Visual Studio Code and testing my pages with Live
+        Server. My goal is to become confident enough to build complete, responsive websites
+        on my own and to keep improving my skills every single week.
+      </p>
+    </section>
+    <section id="hobbies" class="content-section alt-section">
+      <h2>My Hobbies</h2>
+      <ul class="hobby-list">
+        <li>Watching football</li>
+        <li>Listening to music</li>
+        <li>Watching movies</li>
+      </ul>
+    </section>
+    <section id="learning" class="content-section">
+      <h2>My Learning Plan</h2>
+      <h3>Steps I will take to improve my web skills</h3>
+      <ol class="plan-list">
+        <li>Practise HTML and CSS for at least one hour every day using VS Code.</li>
+        <li>Complete the free lessons on MDN Web Docs and build a small page for each topic.</li>
+        <li>Rebuild one real website layout each week to improve my design and layout skills.</li>
+      </ol>
+      <h3>My Weekly Web Learning Plan</h3>
+      <table class="plan-table">
+        <caption>Weekly plan for improving my web development skills</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Practice Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML structure</td>
+            <td>Build a page using header, nav, main and footer</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS styling</td>
+            <td>Style a page with colours, fonts and the box model</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Responsive design</td>
+            <td>Test a page at phone width and fix layout issues</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="photos" class="content-section alt-section">
+      <h2>My Photos</h2>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="images/photo1.jpg" alt="A bright football stadium with green pitch under floodlights">
+          <figcaption>Photo 1: A football stadium &mdash; I enjoy watching football matches here.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/photo2.jpg" alt="A pair of headphones and a music player on a wooden desk">
+          <figcaption>Photo 2: My headphones &mdash; listening to music helps me relax and focus.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/photo3.jpg" alt="A laptop displaying code in a dark room with warm lighting">
+          <figcaption>Photo 3: My study setup &mdash; where I practise HTML and CSS every day.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+      <article class="media-block">
+        <h3>Video Introduction</h3>
+        <video controls poster="images/photo3.jpg" preload="metadata">
+          <source src="videos/intro.mp4" type="video/mp4">
+          Your browser does not support the video element. Please
+          <a href="videos/intro.mp4">download the video</a> instead.
+        </video>
+        <p class="media-caption">
+          A short 30&ndash;60 second video introducing myself, my programme and one web skill I hope to learn.
+        </p>
+        <p class="media-transcript">
+          <strong>Written summary:</strong> In this video I say my name, Shadreck Mwami, and explain that I am a
+          second-year student in the Introduction to Web Technologies programme. I mention that the web skill I most
+          want to learn is responsive CSS layout, so that my pages look good on both phones and computers.
+        </p>
+      </article>
+      <article class="media-block">
+        <h3>Audio Recording</h3>
+        <audio controls preload="metadata">
+          <source src="videos/voice.mp3" type="audio/mpeg">
+          Your browser does not support the audio element. Please
+          <a href="videos/voice.mp3">download the audio</a> instead.
+        </audio>
+        <p class="media-caption">
+          A short 15&ndash;30 second recording about one of my hobbies and why I am studying web technologies.
+        </p>
+      </article>
+    </section>
+    <section id="contact" class="content-section alt-section">
+      <h2>Contact</h2>
+      <p class="form-note">
+        This form is for demonstration only. It does <strong>not</strong> send data anywhere
+        (the action is set to <code>#</code>).
+      </p>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Shadreck Mwami" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="topic">Topic</label>
+          <input type="text" id="topic" name="topic" placeholder="e.g. Feedback on my website">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Shadreck Mwami &mdash; Student Number 202509161</p>
+    <p>ICT251 Introduction to Web Technologies &mdash; Activity 2</p>
+  </footer>
+</body>
+</html>
