@@ -1,0 +1,416 @@
+/* ICT251 Activity 3 — Personal Portfolio */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #3730a3;
+  --primary-dark: #25206f;
+  --accent: #e879a9;
+  --background: #f5f3ff;
+  --surface: #ffffff;
+  --text: #24213a;
+  --muted: #5e5a70;
+  --border: #ded9ef;
+  --radius: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--background);
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: #a21caf;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.site-header {
+  padding: 65px 20px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #312e81, #6d28d9, #db2777);
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-header h1 {
+  margin: 10px 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.tagline {
+  font-weight: bold;
+}
+
+.site-header p {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-header .btn-submit {
+  display: inline-block;
+  margin-top: 15px;
+  color: white;
+  background: #be185d;
+  text-decoration: none;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 3px 12px #24213a0d;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+}
+
+.site-nav a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: white;
+  background: var(--primary);
+}
+
+main {
+  width: min(1100px, 92%);
+  margin: 30px auto;
+}
+
+.content-section {
+  margin-bottom: 25px;
+  padding: clamp(20px, 4vw, 40px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px #3730a30a;
+}
+
+.alt-section {
+  background: #f0edff;
+}
+
+h2 {
+  margin-top: 0;
+  color: var(--primary-dark);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.3;
+}
+
+h3 {
+  color: var(--primary);
+}
+
+.hobby-list,
+.plan-list {
+  padding-left: 25px;
+}
+
+.hobby-list li,
+.plan-list li {
+  margin-bottom: 10px;
+}
+
+.plan-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+}
+
+.plan-table caption {
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.plan-table th,
+.plan-table td {
+  padding: 12px;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.plan-table th {
+  color: white;
+  background: var(--primary);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  min-width: 0;
+  margin: 0;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.gallery-item figcaption {
+  padding: 10px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.gallery-controls {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.media-block {
+  margin-top: 25px;
+}
+
+.media-block video,
+.media-block audio {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+}
+
+.media-block video {
+  border-radius: 12px;
+  background: #171326;
+}
+
+.media-caption,
+.media-transcript {
+  color: var(--muted);
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-card {
+  padding: 20px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.project-card h3 {
+  margin-top: 0;
+}
+
+.project-search {
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  color: var(--text);
+  background: white;
+  border: 1px solid #bcb5d5;
+  border-radius: 9px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+.btn-submit {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+  padding: 11px 18px;
+  color: white;
+  background: var(--primary);
+  border: none;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover,
+.btn-submit:hover {
+  color: white;
+  background: var(--primary-dark);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.field-error {
+  display: block;
+  margin-top: 4px;
+  color: #b91c1c;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border: 2px solid #b91c1c;
+}
+
+#contact-preview {
+  margin-top: 25px;
+  padding: 20px;
+  overflow-wrap: anywhere;
+  background: white;
+  border: 2px solid #6d28d9;
+  border-radius: var(--radius);
+}
+
+#contact-preview p {
+  white-space: pre-wrap;
+}
+
+.site-footer {
+  padding: 30px 20px;
+  color: white;
+  background: #211b45;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #fbcfe8;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Tablet and mobile layouts */
+@media (max-width: 760px) {
+  .site-header {
+    padding: 40px 18px;
+  }
+
+  .site-nav {
+    position: static;
+  }
+
+  .site-nav ul {
+    gap: 3px;
+    padding: 10px;
+  }
+
+  .site-nav a {
+    padding: 7px 9px;
+    font-size: 0.9rem;
+  }
+
+  .gallery,
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    max-height: 350px;
+  }
+
+  .plan-table {
+    font-size: 0.85rem;
+  }
+
+  .plan-table th,
+  .plan-table td {
+    padding: 8px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 420px) {
+  main {
+    width: 94%;
+    margin: 15px auto;
+  }
+
+  .content-section {
+    padding: 16px;
+  }
+
+  .plan-table {
+    font-size: 0.76rem;
+  }
+
+  .plan-table th,
+  .plan-table td {
+    padding: 5px;
+  }
+
+  button,
+  .btn-submit {
+    max-width: 100%;
+  }
+}

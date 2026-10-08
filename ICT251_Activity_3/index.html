@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shadreck Mwami's personal student portfolio for ICT251 Web Technologies.">
+  <title>Shadreck Mwami | Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">ICT251 — Introduction to Web Technologies</p>
+      <h1>Shadreck Mwami</h1>
+      <p class="tagline">Student Number: 202509161 | Aspiring Web Developer</p>
+      <p>Welcome to my personal portfolio. Explore my interests, learning journey and projects.</p>
+      <a class="btn-submit" href="#projects">View My Projects</a>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#hobbies">My Hobbies</a></li>
+      <li><a href="#learning">My Learning Plan</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#media">My Media</a></li>
+      <li><a href="#projects">Projects and Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>
+        My name is Shadreck Mwami and I am a second-year student with a strong interest in
+        technology and how websites are built. I chose Introduction to Web Technologies
+        because I want to understand the full process of turning an idea into a working,
+        attractive web page that real people can use. I enjoy learning by doing, so I spend
+        time practising HTML and CSS in Visual Studio Code and testing my pages with Live
+        Server. My goal is to become confident enough to build complete, responsive websites
+        on my own and to keep improving my skills every single week.
+      </p>
+    </section>
+
+    <section id="hobbies" class="content-section alt-section">
+      <h2>My Hobbies</h2>
+      <ul class="hobby-list">
+        <li>Watching football</li>
+        <li>Listening to music</li>
+        <li>Watching movies</li>
+      </ul>
+    </section>
+
+    <section id="learning" class="content-section">
+      <h2>My Learning Plan</h2>
+      <h3>Steps I will take to improve my web skills</h3>
+      <ol class="plan-list">
+        <li>Practise HTML and CSS for at least one hour every day using VS Code.</li>
+        <li>Complete the free lessons on MDN Web Docs and build a small page for each topic.</li>
+        <li>Rebuild one real website layout each week to improve my design and layout skills.</li>
+      </ol>
+
+      <h3>My Weekly Web Learning Plan</h3>
+      <table class="plan-table">
+        <caption>Weekly plan for improving my web development skills</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Practice Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML structure</td>
+            <td>Build a page using header, nav, main and footer</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS styling</td>
+            <td>Style a page with colours, fonts and the box model</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Responsive design</td>
+            <td>Test a page at phone width and fix layout issues</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="photos" class="content-section alt-section">
+      <h2>My Photos</h2>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="images/photo1.jpg" alt="A football stadium with a green pitch under floodlights">
+          <figcaption>Photo 1: A football stadium — I enjoy watching football matches.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/photo2.jpg" alt="Headphones and a music player on a wooden desk">
+          <figcaption>Photo 2: My headphones — listening to music helps me relax and focus.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/photo3.jpg" alt="A laptop displaying code in a study environment">
+          <figcaption>Photo 3: My study setup — where I practise HTML and CSS.</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-controls">
+        <button type="button" id="previous-photo">Previous</button>
+        <button type="button" id="next-photo">Next</button>
+        <p id="gallery-status" aria-live="polite">Photo 1 of 3</p>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <h2>My Media</h2>
+
+      <article class="media-block">
+        <h3>Video Introduction</h3>
+        <video controls poster="images/photo3.jpg" preload="metadata">
+          <source src="videos/intro.mp4" type="video/mp4">
+          Your browser does not support this video.
+          <a href="videos/intro.mp4">Download the video</a>.
+        </video>
+        <p class="media-caption">
+          A short video introducing myself, my programme and a web skill I hope to learn.
+        </p>
+        <p class="media-transcript">
+          <strong>Written summary:</strong> I introduce myself as Shadreck Mwami,
+          a second-year student, and explain my interest in learning responsive CSS layouts.
+        </p>
+      </article>
+
+      <article class="media-block">
+        <h3>Audio Recording</h3>
+        <audio controls preload="metadata">
+          <source src="videos/voice.mp3" type="audio/mpeg">
+          Your browser does not support this audio.
+          <a href="videos/voice.mp3">Download the audio</a>.
+        </audio>
+        <p class="media-caption">
+          A short recording about one of my hobbies and why I am studying web technologies.
+        </p>
+      </article>
+    </section>
+
+    <section id="projects" class="content-section alt-section">
+      <h2>My Projects and Skills</h2>
+      <p>These are examples of the skills I am developing. I will continue improving them through practical work.</p>
+
+      <div class="project-list">
+        <article class="project-card">
+          <h3>HTML Personal Website</h3>
+          <p>Using HTML5 to organise information into meaningful sections, headings, lists and tables.</p>
+          <button type="button" class="details-toggle" aria-expanded="false" aria-controls="project-details-1">Show details</button>
+          <div id="project-details-1" hidden>
+            <p>Skills: semantic HTML, hyperlinks, accessible images and structured page content.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>CSS Website Styling</h3>
+          <p>Practising colours, typography, spacing, borders and responsive layouts.</p>
+          <button type="button" class="details-toggle" aria-expanded="false" aria-controls="project-details-2">Show details</button>
+          <div id="project-details-2" hidden>
+            <p>Skills: external stylesheets, selectors, the box model and media queries.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Interactive Website</h3>
+          <p>Learning how JavaScript responds to user actions and updates a webpage.</p>
+          <button type="button" class="details-toggle" aria-expanded="false" aria-controls="project-details-3">Show details</button>
+          <div id="project-details-3" hidden>
+            <p>Skills: events, functions, form validation and DOM manipulation.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="project-search">
+        <label for="project-search-input">Search projects or skills</label>
+        <input type="search" id="project-search-input" placeholder="e.g. HTML, CSS or JavaScript">
+        <button type="button" id="reset-project-search">Reset search</button>
+        <p id="project-search-status" aria-live="polite">Showing all 3 projects.</p>
+      </div>
+    </section>
+
+    <section id="study-calculator" class="content-section">
+      <h2>Study Hours Calculator</h2>
+      <p>Calculate how many hours you plan to study each week.</p>
+
+      <form id="study-form">
+        <div class="form-group">
+          <label for="hours-per-day">Planned hours per day</label>
+          <input type="number" id="hours-per-day" min="0" step="0.5" required>
+        </div>
+        <div class="form-group">
+          <label for="days-per-week">Study days per week (1–7)</label>
+          <input type="number" id="days-per-week" min="1" max="7" step="1" required>
+        </div>
+        <button type="submit">Calculate weekly hours</button>
+        <p id="study-result" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="contact" class="content-section alt-section">
+      <h2>Contact</h2>
+      <p class="form-note">
+        Browser demonstration only — no message is sent.
+      </p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Shadreck Mwami" required>
+          <small id="name-error" class="field-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <small id="email-error" class="field-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic</label>
+          <input type="text" id="topic" name="topic" placeholder="e.g. Feedback on my website">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          <small id="message-error" class="field-error"></small>
+        </div>
+
+        <button type="submit" class="btn-submit">Validate and Preview</button>
+        <p id="form-status" aria-live="polite"></p>
+
+        <div id="contact-preview" hidden>
+          <h3>Validated Message Preview</h3>
+          <p><strong>Name:</strong> <span id="preview-name"></span></p>
+          <p><strong>Email:</strong> <span id="preview-email"></span></p>
+          <p><strong>Topic:</strong> <span id="preview-topic"></span></p>
+          <p><strong>Message:</strong> <span id="preview-message"></span></p>
+          <p>Your data was validated in this browser. No message was sent.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Shadreck Mwami — Student Number 202509161</p>
+    <p>ICT251 Web Technologies — Activity 3</p>
+    <p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Source on GitHub</a></p>
+  </footer>
+</body>
+</html>
